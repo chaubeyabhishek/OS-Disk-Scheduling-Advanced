@@ -98,7 +98,7 @@ public class DiskSchedulingSimulator {
         System.out.println("Throughput (SCAN): " + throughput);
     }
 
-    // Function to simulate C-SCAN (Circular SCAN)
+    // Function to simulate c-SCAN (Circular SCAN)
     public static void CSCAN(int[] requests, int headPosition, int diskSize) {
         int totalSeekTime = 0;
         int currentHead = headPosition;
@@ -161,7 +161,7 @@ public class DiskSchedulingSimulator {
             requests[i] = sc.nextInt();
         }
 
-        // Choose the scheduling algorithm using if-else
+        
         System.out.println("\nChoose Disk Scheduling Algorithm:");
         System.out.println("1. FCFS (First-Come, First-Served)");
         System.out.println("2. SSTF (Shortest Seek Time First)");
